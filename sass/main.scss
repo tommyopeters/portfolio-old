@@ -1,31 +1,3 @@
-$color_1: #727272;
-$color_2: inherit;
-$color_3: #333;
-$color_4: #FFF;
-$color_5: #666;
-$color_6: #787878;
-$color_7: #000;
-$color_8: #ddd;
-$color_9: #868e96;
-$color_10: #C33;
-$color_11: #f5f5f5;
-$font_family_1: 'Ionicons';
-$background_color_1: #333;
-$background_color_2: #FFF;
-$background_color_3: rgba(0, 0, 0, 0.2);
-$background_color_4: rgba(0, 0, 0, 1);
-$background_color_5: rgba(255, 255, 255, 1);
-$background_color_6: #F1F3F6;
-$background_color_7: rgba(255, 255, 255, 0.7);
-$background_color_8: #ddd;
-$background_color_9: #666;
-$background_color_10: #181818;
-$background_color_11: #fff;
-$background_color_12: #f1f3f6;
-$background_color_13: transparent;
-$background_color_14: #82B441;
-$border_color_1: #f1f3f6;
-$border_color_2: #666;
 
 /*------------------------------------------------------------------
 
@@ -66,7 +38,7 @@ $border_color_2: #666;
                         1. Preloader
 
 -------------------------------------------------------------------*/
-@-webkit-keyframes "pulse" {
+@-webkit-keyframes pulse {
 	0% {
 		-webkit-transform: scale3d(1, 1, 1);
 		transform: scale3d(1, 1, 1);
@@ -80,7 +52,7 @@ $border_color_2: #666;
 		transform: scale3d(1, 1, 1);
 	}
 }
-@keyframes "pulse" {
+@keyframes pulse {
 	0% {
 		-webkit-transform: scale3d(1, 1, 1);
 		-ms-transform: scale3d(1, 1, 1);
@@ -102,7 +74,7 @@ $border_color_2: #666;
                         2. Home Styles
 
 -------------------------------------------------------------------*/
-@-webkit-keyframes "bgScroll" {
+@-webkit-keyframes bgScroll {
 	0% {
 		-webkit-transform: translateY(0);
 		transform: translateY(0);
@@ -112,7 +84,7 @@ $border_color_2: #666;
 		transform: translateY(-1934px);
 	}
 }
-@keyframes "bgScroll" {
+@keyframes bgScroll {
 	0% {
 		-webkit-transform: translateY(0);
 		transform: translateY(0);
@@ -174,7 +146,7 @@ body {
 	font: 400 14px 'Poppins', sans-serif;
 	-webkit-font-smoothing: antialiased;
 	line-height: 30px;
-	color: $color_1;
+	color: #727272;
 	font-size: 16px;
 	font-weight: 300;
 	line-height: 2.2;
@@ -192,13 +164,13 @@ a {
 	}
 	&:not([href]) {
 		&:not([tabindex]) {
-			color: $color_4;
+			color: white;
 			cursor: pointer;
 		}
 	}
 }
 a[href^="tel:"] {
-	color: $color_2;
+	color: inherit;
 	text-decoration: none;
 }
 img {
@@ -209,7 +181,7 @@ img {
 h1 {
 	text-transform: uppercase;
 	font-weight: 500;
-	color: $color_3;
+	color: #333;
 	letter-spacing: 1px;
 	font-size: 50px;
 	line-height: 60px;
@@ -219,7 +191,7 @@ h1 {
 h2 {
 	text-transform: uppercase;
 	font-weight: 500;
-	color: $color_3;
+	color: #333;
 	letter-spacing: 1px;
 	font-size: 22px;
 	line-height: 26px;
@@ -229,7 +201,7 @@ h2 {
 h3 {
 	text-transform: uppercase;
 	font-weight: 500;
-	color: $color_3;
+	color: #333;
 	letter-spacing: 1px;
 	font-size: 20px;
 	line-height: 26px;
@@ -240,7 +212,7 @@ h3 {
 h4 {
 	text-transform: uppercase;
 	font-weight: 500;
-	color: $color_3;
+	color: #333;
 	letter-spacing: 1px;
 	font-size: 16px;
 	line-height: 24px;
@@ -250,7 +222,7 @@ h4 {
 h5 {
 	text-transform: uppercase;
 	font-weight: 500;
-	color: $color_3;
+	color: #333;
 	letter-spacing: 1px;
 	font-size: 15px;
 	line-height: 32px;
@@ -260,7 +232,7 @@ h5 {
 h6 {
 	text-transform: uppercase;
 	font-weight: 500;
-	color: $color_3;
+	color: #333;
 	letter-spacing: 1px;
 	font-size: 14px;
 	line-height: 32px;
@@ -275,10 +247,10 @@ ul {
 	padding-left: 0;
 }
 strong {
-	color: $color_3;
+	color: #333;
 }
 small {
-	color: $color_3;
+	color: #333;
 }
 .btn {
 	border: 2px solid transparent;
@@ -290,20 +262,20 @@ small {
 	font-weight: 600;
 	transition: all .3s;
 	position: relative;
-	color: $color_4;
-	background-color: $background_color_1;
+	color: white;
+	background-color: #333;
 	z-index: 20;
 	letter-spacing: 2px;
 	overflow: hidden;
 	&:hover {
-		color: $color_5;
-		background-color: $background_color_2;
+		color: #666;
+		background-color: #333;
 		border: 2px solid #666;
 		letter-spacing: 3px;
 	}
 	&:focus {
 		box-shadow: none;
-		color: $color_4;
+		color: white;
 		outline: none;
 	}
 }
@@ -313,8 +285,8 @@ small {
 	padding: 16px 55px 16px 25px;
 	&:hover {
 		border: none;
-		color: $color_4;
-		background-color: $background_color_1;
+		color: white;
+		background-color: #333;
 		letter-spacing: 2px;
 		&:before {
 			-webkit-animation-duration: 1s;
@@ -341,7 +313,7 @@ small {
 	&:before {
 		position: absolute;
 		content: '\f407';
-		font-family: $font_family_1;
+		font-family: 'Ionicons';
 		top: 12px;
 		right: 16px;
 		font-size: 24px;
@@ -349,7 +321,7 @@ small {
 	&:after {
 		content: "";
 		position: absolute;
-		background-color: $background_color_3;
+		background-color: rgba(0, 0, 0, 0.2);
 		right: 0;
 		top: 0;
 		height: 100%;
@@ -392,7 +364,7 @@ small {
 	z-index: 999999;
 	background: transparent;
 	.anim {
-		color: $color_4;
+		color: white;
 		font-size: 60px;
 		position: absolute;
 		top: 50%;
@@ -459,13 +431,13 @@ small {
 	z-index: -1;
 }
 .overlay {
-	background-color: $background_color_4;
+	background-color:  rgba(0, 0, 0, 1);
 	height: 100%;
 	position: fixed;
 	width: 100%;
 }
 .overlay.light {
-	background-color: $background_color_5;
+	background-color: rgba(255, 255, 255, 1);
 }
 .opacity9 {
 	opacity: 0.9;
@@ -521,7 +493,7 @@ small {
 		}
 	}
 	.owl-nav {
-		color: $color_4;
+		color: white;
 		cursor: pointer;
 		font-size: 30px;
 		padding: 10px;
@@ -603,7 +575,7 @@ small {
 }
 h2.menu-item {
 	position: relative;
-	color: $color_4;
+	color: white;
 	margin: 50px;
 	font-size: 28px;
 	font-weight: 600;
@@ -628,7 +600,7 @@ h2.menu-item {
 }
 .dark {
 	h2.menu-item {
-		color: $color_3;
+		color: #333;
 		&:after {
 			background: #333;
 		}
@@ -638,16 +610,16 @@ h2.menu-item {
 	}
 	.name-block-container {
 		h1 {
-			color: $color_3;
+			color: #333;
 		}
 		h2 {
-			color: $color_3;
+			color: #333;
 		}
 	}
 	.social {
 		a {
 			border: 2px solid #333;
-			color: $color_3;
+			color: #333;
 		}
 	}
 	.about-block {
@@ -697,7 +669,7 @@ h2.contact.menu-item {
 	top: 0;
 }
 .status {
-	color: $color_3;
+	color: #333;
 	line-height: 38px;
 	padding-left: 45px;
 	&:before {
@@ -740,13 +712,13 @@ h2.contact.menu-item {
 		line-height: 40px;
 		margin-top: -5px;
 		padding: 0 15px;
-		color: $color_5;
+		color: #666;
 		&:hover {
-			color: $color_3;
+			color: #333;
 		}
 	}
 	li.active {
-		color: $color_3;
+		color: #333;
 		cursor: text;
 	}
 }
@@ -756,17 +728,17 @@ h2.contact.menu-item {
 .style2 {
 	.inline-menu {
 		li {
-			color: $color_4;
+			color: white;
 			font-weight: 400;
 			line-height: 70px;
 		}
 	}
 }
 .style2.dark {
-	background-color: $background_color_6;
+	background-color: #F1F3F6;
 	.inline-menu {
 		li {
-			color: $color_5;
+			color: #666;
 			font-size: 14px;
 			line-height: 40px;
 		}
@@ -796,7 +768,7 @@ h2.contact.menu-item {
 		top: 50%;
 		transform: translateY(-50%);
 		li {
-			color: $color_6;
+			color: #787878;
 			display: block;
 			font-size: 20px;
 			font-weight: 300;
@@ -804,7 +776,7 @@ h2.contact.menu-item {
 			padding: 0 0 0 30px;
 		}
 		li.active {
-			color: $color_4;
+			color: white;
 		}
 	}
 	.close-pop {
@@ -823,7 +795,7 @@ h2.contact.menu-item {
 	}
 }
 .close-pop {
-	background-color: $background_color_6;
+	background-color: #F1F3F6;
 	cursor: pointer;
 	line-height: 40px;
 	height: 40px;
@@ -889,7 +861,7 @@ h2.contact.menu-item {
 .block-title {
 	font-size: 24px;
 	text-transform: uppercase;
-	color: $color_3;
+	color: #333;
 	padding-bottom: 15px;
 	border-bottom: 1px solid #ddd;
 	margin-bottom: 30px;
@@ -946,7 +918,7 @@ h2.contact.menu-item {
 	h1 {
 		text-transform: capitalize;
 		font-weight: 700;
-		color: $color_4;
+		color: white;
 		margin-bottom: 10px;
 		text-transform: uppercase;
 		span {
@@ -959,7 +931,7 @@ h2.contact.menu-item {
 	h2 {
 		text-transform: capitalize;
 		font-weight: 700;
-		color: $color_4;
+		color: white;
 		margin-bottom: 10px;
 		text-transform: uppercase;
 		font-size: 26px;
@@ -980,15 +952,15 @@ h2.contact.menu-item {
 	}
 	a {
 		border: 2px solid #FFF;
-		color: $color_4;
+		color: white;
 		display: inline-block;
 		height: 35px;
 		width: 35px;
 		transition: all 0.5s;
 		&:hover {
-			background-color: $background_color_7;
+			background-color: rgba(255, 255, 255, 0.7);
 			border: 2px solid transparent;
-			color: $color_3;
+			color: #333;
 		}
 	}
 }
@@ -1035,7 +1007,7 @@ h2.contact.menu-item {
 	margin: 20px 0;
 	overflow: auto;
 	span {
-		color: $color_3;
+		color: #333;
 		font-weight: 400;
 		margin-right: 5px;
 	}
@@ -1047,7 +1019,7 @@ h2.contact.menu-item {
 .progress {
 	height: 2px;
 	margin-bottom: 30px;
-	background-color: $background_color_8;
+	background-color: #ddd;
 	border-radius: 0;
 	box-shadow: none;
 	overflow: visible;
@@ -1056,7 +1028,7 @@ h2.contact.menu-item {
 .progress-bar {
 	height: 2px;
 	line-height: 8px;
-	background-color: $background_color_9;
+	background-color: #666;
 	box-shadow: none;
 	position: relative;
 	span {
@@ -1065,7 +1037,7 @@ h2.contact.menu-item {
 		height: 40px;
 		line-height: 40px;
 		text-align: center;
-		color: $color_7;
+		color: black;
 		background: #F1F3F6;
 		font-weight: 500;
 		position: absolute;
@@ -1074,7 +1046,7 @@ h2.contact.menu-item {
 	}
 }
 .progress-bar-label {
-	color: $color_3;
+	color: #333;
 	font-weight: 500;
 	margin-bottom: 10px;
 	span {
@@ -1087,10 +1059,10 @@ h2.contact.menu-item {
 		&:before {
 			position: absolute;
 			content: '\f3fd';
-			font-family: $font_family_1;
+			font-family: 'Ionicons';
 			font-size: 24px;
 			left: 20px;
-			color: $color_5;
+			color: #666;
 		}
 	}
 }
@@ -1107,14 +1079,14 @@ h2.contact.menu-item {
 		height: 75%;
 	}
 	&:after {
-		font-family: $font_family_1;
+		font-family: 'Ionicons';
 		top: 0;
 		left: -5px;
 		width: 50px;
 		height: 50px;
 		position: absolute;
 		text-align: center;
-		color: $color_8;
+		color: #ddd;
 		font-size: 36px;
 		line-height: 45px;
 	}
@@ -1150,7 +1122,7 @@ h2.contact.menu-item {
 			text-transform: none;
 			margin-bottom: 10px;
 			span {
-				color: $color_5;
+				color: #666;
 			}
 		}
 		h5 {
@@ -1160,11 +1132,11 @@ h2.contact.menu-item {
 			font-size: 14px;
 			font-weight: 400;
 			text-align: right;
-			color: $color_1;
+			color: #727272;
 			padding-left: 60px;
 			position: relative;
 			&:before {
-				color: $color_8;
+				color: #ddd;
 				content: "/";
 				left: 0;
 				left: 30px;
@@ -1191,7 +1163,7 @@ h2.contact.menu-item {
 .service-icon {
 	font-size: 30px;
 	margin-bottom: 10px;
-	color: $color_5;
+	color: #666;
 }
 .awards {
 	padding: 30px;
@@ -1208,7 +1180,7 @@ h2.contact.menu-item {
 	margin-top: 70px;
 }
 .price-table {
-	background-color: $background_color_2;
+	background-color: #333;
 	border: 1px solid #ddd;
 	margin: 0 auto 50px;
 	max-width: 400px;
@@ -1228,17 +1200,17 @@ h4.package {
 }
 .price {
 	border-bottom: 1px solid #ddd;
-	color: $color_6;
+	color: #787878;
 	padding: 0 0 30px;
 	.amount {
-		color: $color_3;
+		color: #333;
 		display: block;
 		font-size: 36px;
 		font-weight: 600;
 	}
 }
 .details {
-	color: $color_6;
+	color: #787878;
 	line-height: 3;
 	list-style-type: none;
 	padding: 30px 0;
@@ -1274,7 +1246,7 @@ h4.package {
 	}
 	blockquote {
 		border-left: none;
-		color: $color_3;
+		color: #333;
 		font-size: 20px;
 		margin-top: 40px;
 		padding: 40px 15px;
@@ -1284,7 +1256,7 @@ h4.package {
 		display: block;
 		margin-top: 20px;
 		font-size: 14px;
-		color: $color_1;
+		color: #727272;
 		span {
 			font-weight: 700;
 		}
@@ -1292,7 +1264,7 @@ h4.package {
 }
 #liontestimonial {
 	.owl-nav {
-		color: $color_5;
+		color: #666;
 		cursor: pointer;
 		font-size: 30px;
 		padding: 10px;
@@ -1362,14 +1334,14 @@ h4.package {
 			cursor: pointer;
 			transition: all 0.3s ease;
 			&:hover {
-				color: $color_3;
+				color: #333;
 			}
 			&:first-child {
 				margin-left: 0;
 			}
 		}
 		li.active {
-			color: $color_3;
+			color: #333;
 		}
 	}
 }
@@ -1421,7 +1393,7 @@ h4.package {
 	opacity: 0;
 	transform: translateY(-50%);
 	h2 {
-		color: $color_4;
+		color: white;
 		position: relative;
 		width: 100%;
 		padding: 0;
@@ -1434,7 +1406,7 @@ h4.package {
 		transition: all 0.6s;
 	}
 	p {
-		color: $color_4;
+		color: white;
 		font-size: 12px;
 		font-weight: 400;
 		position: relative;
@@ -1451,7 +1423,7 @@ h4.package {
 		width: 40px;
 		height: 1px;
 		border: 0;
-		background-color: $background_color_6;
+		background-color: #F1F3F6;
 		margin: 20px 0 10px;
 		position: relative;
 		left: 50%;
@@ -1462,7 +1434,7 @@ h4.package {
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	background-color: $background_color_10;
+	background-color: #181818;
 	top: 0;
 	z-index: 200;
 	opacity: 0;
@@ -1478,14 +1450,14 @@ h4.package {
 		h2 {
 			opacity: 1;
 			text-align: left;
-			color: $color_3;
+			color: #333;
 			padding: 20px 30px 0;
 			margin-top: 0;
 		}
 		p {
 			opacity: 1;
 			text-align: left;
-			color: $color_5;
+			color: #666;
 			margin-top: 0;
 		}
 	}
@@ -1501,7 +1473,7 @@ h4.package {
 }
 .project-head {
 	span {
-		color: $color_3;
+		color: #333;
 		font-weight: 400;
 		margin-right: 5px;
 	}
@@ -1549,10 +1521,10 @@ h4.package {
 		font-size: 24px;
 	}
 	a {
-		color: $color_2;
+		color: inherit;
 		font-weight: 500;
 		&:hover {
-			color: $color_3;
+			color: #333;
 		}
 	}
 }
@@ -1562,10 +1534,10 @@ h4.package {
 		font-size: 24px;
 	}
 	a {
-		color: $color_2;
+		color: inherit;
 		font-weight: 500;
 		&:hover {
-			color: $color_3;
+			color: #333;
 		}
 	}
 }
@@ -1577,6 +1549,9 @@ h4.package {
 	display: table;
 	transition: all 0.5s;
 	z-index: 1;
+	&:hover {
+		border: 15px solid rgba(255, 255, 255, 0.1);
+	}
 }
 .blog-block-container {
 	display: table-cell;
@@ -1587,7 +1562,7 @@ h4.package {
 	transform: rotate(34deg);
 }
 .post {
-	background-color: $background_color_11;
+	background-color: white;
 	margin: 25px 0;
 	&:last-child {
 		border-bottom: 0;
@@ -1638,28 +1613,28 @@ h4.package {
 	margin-bottom: 0;
 }
 .page-link {
-	background-color: $background_color_12;
-	border-color: $border_color_1;
-	color: $color_9;
-	color: $color_1;
+	background-color: #f1f3f6;
+	border-color: #f1f3f6;
+	color: #868e96;
+	color: #727272;
 	&:focus {
-		color: $color_3;
+		color: #333;
 	}
 	&:hover {
-		color: $color_3;
+		color: #333;
 	}
 }
 .page-item.disabled {
 	.page-link {
-		background-color: $background_color_12;
-		border-color: $border_color_1;
-		color: $color_9;
+		background-color: #f1f3f6;
+		border-color: #f1f3f6;
+		color: #868e96;
 	}
 }
 .page-item.active {
 	.page-link {
-		background-color: $background_color_9;
-		border-color: $border_color_2;
+		background-color: #666;
+		border-color: #666;
 	}
 }
 #blog-header {
@@ -1681,9 +1656,9 @@ h4.package {
 	top: 50%;
 	transform: translateY(-50%);
 	width: 100%;
-	color: $color_4;
+	color: white;
 	h1 {
-		color: $color_4;
+		color: white;
 		margin-bottom: 30px;
 	}
 }
@@ -1699,9 +1674,9 @@ h4.package {
 			padding-bottom: 0;
 		}
 		blockquote {
-			background-color: $background_color_6;
+			background-color: #F1F3F6;
 			border-left: 5px solid #ddd;
-			color: $color_3;
+			color: #333;
 			padding: 20px;
 		}
 	}
@@ -1716,7 +1691,7 @@ h4.package {
 		font-size: 14px;
 		margin-bottom: 10px;
 		span {
-			color: $color_1;
+			color: #727272;
 		}
 	}
 }
@@ -1737,13 +1712,13 @@ h4.package {
 			margin: 5px;
 			border: 1px solid #ddd;
 			font-size: 16px;
-			color: $color_8;
+			color: #ddd;
 			padding: 0;
 			line-height: 36px;
 			text-align: center;
 			transition: all .3s ease;
 			&:hover {
-				color: $color_5;
+				color: #666;
 				border: 1px solid #666;
 			}
 		}
@@ -1780,7 +1755,7 @@ h4.package {
 				&:before {
 					position: absolute;
 					content: '\f3d6';
-					font-family: $font_family_1;
+					font-family: 'Ionicons';
 					font-size: 26px;
 					margin-top: 5%;
 					margin-left: -30px;
@@ -1812,10 +1787,10 @@ h4.package {
 	}
 }
 .comment-date {
-	color: $color_1;
+	color: #727272;
 }
 .comment-reply {
-	color: $color_3;
+	color: #333;
 	font-size: 12px;
 	font-weight: 500;
 	position: absolute;
@@ -1903,7 +1878,7 @@ h4.package {
 	vertical-align: top;
 	font-size: 30px;
 	text-align: center;
-	color: $color_5;
+	color: #666;
 	display: table-cell;
 }
 .contact-details {
@@ -1922,7 +1897,7 @@ h4.package {
 	top: 0;
 	i {
 		&:before {
-			color: $color_10;
+			color: #C33;
 			font-size: 100%;
 			vertical-align: top;
 			margin-right: 10px;
@@ -1934,7 +1909,7 @@ h4.package {
 }
 #contact_form {
 	.form-control {
-		background-color: $background_color_13;
+		background-color: transparent;
 		-webkit-box-shadow: none;
 		box-shadow: none;
 		border: none;
@@ -1959,8 +1934,8 @@ h4.package {
 	width: 100%;
 }
 .buy-now {
-	background-color: $background_color_14;
-	color: $color_4;
+	background-color:  #82B441;
+	color: white;
 	display: block;
 	font-size: 13px;
 	font-weight: 500;
@@ -1971,7 +1946,7 @@ h4.package {
 	top: 20px;
 	z-index: 999;
 	&:hover {
-		color: $color_11;
+		color: #f5f5f5;
 	}
 }
 @media (min-width:1920px) {
@@ -2186,8 +2161,8 @@ h4.package {
 				}
 			}
 			h2 {
-				font-size: 26px;
-				min-height: 26px;
+				font-size: 20px;
+				min-height: 20px;
 			}
 		}
 	}
@@ -2435,7 +2410,7 @@ h4.package {
 			margin-top: 0;
 			width: 100%;
 			li {
-				color: $color_11;
+				color: #f5f5f5;
 				font-size: 16px;
 				display: inline-block;
 				line-height: 50px;
