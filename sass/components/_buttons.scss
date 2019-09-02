@@ -1,0 +1,85 @@
+.btn {
+  border: 2px solid transparent;
+  border-radius: 0;
+  padding: 1.2rem 2.8rem;
+  margin: 2rem 0;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 600;
+  transition: all 0.3s;
+  position: relative;
+  color: #fff;
+  background-color: #333;
+  z-index: 20;
+  letter-spacing: 0.2rem;
+  overflow: hidden;
+
+  &:hover {
+    color: #666;
+    background-color: #fff;
+    border: 0.2rem solid #666;
+    letter-spacing: 0.3rem;
+  }
+
+  &:focus {
+    box-shadow: none;
+    color: #fff;
+    outline: none;
+  }
+
+  &-download {
+    border: none;
+    font-size: 1.4rem;
+    padding: 1.6rem 5.5rem 1.6rem 2.5rem;
+  }
+
+  &-download:hover {
+    border: none;
+    color: #fff;
+    background-color: #333;
+    letter-spacing: 0.2rem;
+  }
+
+  &-download:before {
+    position: absolute;
+    content: "\f407";
+    font-family: "Ionicons";
+    top: 1.2rem;
+    right: 1.6rem;
+    font-size: 2.4rem;
+  }
+
+  &-download:hover:before {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-name: fadeOutDown;
+    transform-origin: center bottom;
+  }
+
+  &-download:after {
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.2);
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 0;
+    z-index: -1;
+    transition: all 0.3s;
+  }
+
+  &-download:hover:after {
+    width: 5rem;
+    height: 7rem;
+    right: -5rem;
+    top: -5rem;
+    -ms-transform: rotate(15deg);
+    -webkit-transform: rotate(15deg);
+    transform: rotate(15deg);
+  }
+
+  &.disabled {
+    opacity: 1;
+  }
+}

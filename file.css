@@ -1014,7 +1014,7 @@ h2.menu-item:after {
 
 .social li i {
     line-height: 32px;
-    font-size: 18px;
+    font-size: 12px;
 }
 
 .social a:hover {
@@ -1702,7 +1702,7 @@ h4.package {
 }
 
 .blog-block:hover {
-    /* border: 15px solid rgba(255, 255, 255, 0.1); */
+    border: 15px solid rgba(255, 255, 255, 0.1);
 }
 
 .blog-block-container {
@@ -2780,6 +2780,24 @@ h4.package {
 
 -------------------------------------------------------------------*/
 
-#professions{
-    border-right: 0.1rem solid white;
+.buy-now {
+    background-color: #82B441;  
+    color: #FFF; 
+    display: block; 
+    font-size: 13px; 
+    font-weight: 500; 
+    left: 50px;
+    letter-spacing: 1.5px;
+    padding: 3px 15px; 
+    position: absolute;
+    top: 20px; 
+    z-index: 999
+}
+.buy-now:hover {
+    color: #f5f5f5;
+}
+@media (max-width: 1024px){
+    .buy-now {
+        display: none
+    }
 }

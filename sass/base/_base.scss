@@ -1,0 +1,32 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  box-sizing: border-box;
+  font: 400 14px "Poppins", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  line-height: 30px;
+  color: #727272;
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 2.2;
+  overflow-x: hidden;
+}
+
+.display-block {
+  display: block;
+}
+
+.lowercase {
+  text-transform: lowercase;
+}

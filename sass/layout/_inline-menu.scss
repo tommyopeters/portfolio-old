@@ -1,0 +1,156 @@
+.status {
+  color: #333;
+  line-height: 3.8rem;
+  padding-left: 4.5rem;
+
+  &:before {
+    position: absolute;
+    top: 1.7rem;
+    left: 2.5rem;
+    width: 0.7rem;
+    height: 0.7rem;
+    border-radius: 50%;
+    background: #4dd133;
+    content: "";
+  }
+  &:after {
+    position: absolute;
+    top: 1.3rem;
+    left: 2.1rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    background: #4dd133;
+    content: "";
+    opacity: 0.3;
+  }
+}
+
+#close i {
+  font-size: 3rem;
+  vertical-align: middle;
+}
+
+.inline-menu {
+  float: right;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 2rem;
+
+  li {
+    display: inline-block;
+    cursor: pointer;
+    font-weight: 600;
+    line-height: 4rem;
+    margin-top: -0.5rem;
+    padding: 0 1.5rem;
+    color: #666;
+  }
+
+  li.active,
+  li:hover {
+    color: #333;
+  }
+  li.active {
+    cursor: text;
+  }
+
+  &-container {
+    background: #f1f3f6;
+    position: fixed;
+    height: 4rem;
+    width: 69%;
+    right: 13rem;
+    top: -5rem;
+    transition: all 0.5s;
+    z-index: 1;
+
+    .showx {
+      top: 0;
+    }
+    .style2 {
+      background: transparent;
+    }
+    .style3 {
+      background: #fff;
+      border-bottom: 0.1rem solid #eee;
+      height: 4rem;
+    }
+  }
+}
+
+.style2 .inline-menu li {
+  color: #fff;
+  font-weight: 400;
+  line-height: 7rem;
+}
+
+.style2.dark {
+  background-color: #f1f3f6;
+}
+
+.style2.dark .inline-menu li {
+  color: #666;
+  font-size: 1.4rem;
+  line-height: 4rem;
+}
+
+.sidebar-menu {
+  background: #111;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  width: 20%;
+
+  .hidex {
+    opacity: 1;
+    visibility: visible;
+    z-index: 1;
+  }
+}
+
+.menu4 .inline-menu {
+  margin-right: 0;
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+
+  li {
+    color: #787878;
+    display: block;
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 6rem;
+    padding: 0 0 0 3rem;
+
+    .active {
+      color: #fff;
+    }
+
+    .close-pop {
+      background-color: #f1f3f6;
+      cursor: pointer;
+      line-height: 4rem;
+      height: 4rem;
+      position: fixed;
+      text-align: center;
+      width: 69%;
+      right: 1.3rem;
+      top: -6rem;
+      transition: all 0.7s;
+      z-index: 1;
+    }
+  }
+}
+
+.menu4 .close-pop {
+  width: 79%;
+}
+
+.close-pop:hover {
+  opacity: 0.7;
+}
+
+.content-blocks.pop.showx .close-pop {
+  top: 0;
+}

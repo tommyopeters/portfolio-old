@@ -1,0 +1,97 @@
+.menu-blocks {
+  transition: all 0.5s;
+
+  .hidex {
+    z-index: -999;
+  }
+
+  .showx {
+    z-index: 999;
+  }
+}
+
+.menu-block {
+  cursor: pointer;
+
+  &:hover {
+    top: -2rem;
+    left: -4rem;
+  }
+}
+
+.menu-item {
+  cursor: pointer;
+
+  &:hover {
+    top: 1.2rem;
+    left: -4rem;
+  }
+
+  &:hover {
+    background: rgba(0, 0, 0, 0.1);
+  }
+}
+
+h2 {
+  .menu-item {
+    position: relative;
+    color: #fff;
+    margin: 5rem;
+    font-size: 2.8rem;
+    font-weight: 600;
+    transition: all 1s ease-out;
+
+    &-item:after {
+      top: 1.2rem;
+      left: -4rem;
+    }
+
+    &-item:before {
+      position: absolute;
+      top: -4rem;
+      left: -2rem;
+      font-size: 1.4rem;
+      transition: all 0.5s ease;
+    }
+
+    &-item:before {
+      top: -2rem;
+      left: -4rem;
+    }
+
+    &-item:after {
+      position: absolute;
+      content: "";
+      top: -1rem;
+      left: -2rem;
+      width: 7rem;
+      height: 0.1rem;
+      background: #fff;
+      transition: all 0.5s ease;
+    }
+  }
+
+  .about.menu-item:before {
+    content: "01";
+  }
+
+  .portfolio.menu-item:before {
+    content: "02";
+  }
+
+  .blog.menu-item:before {
+    content: "03";
+  }
+
+  .contact.menu-item:before {
+    content: "04";
+  }
+}
+
+.dark h2.menu-item {
+  color: #333;
+
+  &:after {
+    background: #333;
+  }
+}
