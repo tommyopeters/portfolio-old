@@ -87,6 +87,4 @@ typings/
 # DynamoDB Local files
 .dynamodb/
 
-#images
-.images/masonry/folder
-images/masonry/folder
+images/
