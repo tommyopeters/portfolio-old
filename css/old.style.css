@@ -1702,7 +1702,7 @@ h4.package {
 }
 
 .blog-block:hover {
-    /* border: 15px solid rgba(255, 255, 255, 0.1); */
+    border: 15px solid rgba(255, 255, 255, 0.1);
 }
 
 .blog-block-container {

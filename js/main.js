@@ -234,6 +234,11 @@
     $(".content-blocks").animate({ scrollTop: 0 }, 800);
   });
 
+  //On click Say hi button
+  $(".sayhi").on("click", function() {
+    $(".contact-block, .menu-item.contact").click();
+  });
+
   //Function for 'Index-Menu2.html'
   $("#home").on("click", function() {
     $(".content-blocks").removeClass("showx");
