@@ -297,30 +297,30 @@
       ]
     };
 
-    // Get the HTML DOM element that will contain your map
-    // We are using a div with id="map" seen below in the <body>
-    var mapElement = document.getElementById("map");
+    //     // Get the HTML DOM element that will contain your map
+    //     // We are using a div with id="map" seen below in the <body>
+    //     var mapElement = document.getElementById("map");
 
-    // Create the Google Map using our element and options defined above
-    var map = new google.maps.Map(mapElement, mapOptions);
+    //     // Create the Google Map using our element and options defined above
+    //     var map = new google.maps.Map(mapElement, mapOptions);
 
-    var image = "images/map-marker.png";
-    // Let's also add a marker while we're at it
-    var marker = new google.maps.Marker({
-      position: new google.maps.LatLng(40.67, -73.94),
-      map: map,
-      icon: image,
-      draggable: true,
-      animation: google.maps.Animation.DROP
-    });
-    marker.addListener("click", toggleBounce);
+    //     var image = "images/map-marker.png";
+    //     // Let's also add a marker while we're at it
+    //     var marker = new google.maps.Marker({
+    //       position: new google.maps.LatLng(40.67, -73.94),
+    //       map: map,
+    //       icon: image,
+    //       draggable: true,
+    //       animation: google.maps.Animation.DROP
+    //     });
+    //     marker.addListener("click", toggleBounce);
 
-    function toggleBounce() {
-      if (marker.getAnimation() !== null) {
-        marker.setAnimation(null);
-      } else {
-        marker.setAnimation(google.maps.Animation.BOUNCE);
-      }
-    }
+    //     function toggleBounce() {
+    //       if (marker.getAnimation() !== null) {
+    //         marker.setAnimation(null);
+    //       } else {
+    //         marker.setAnimation(google.maps.Animation.BOUNCE);
+    //       }
+    //     }
   }
 })(jQuery);

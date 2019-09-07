@@ -254,13 +254,8 @@ a:not([href]):not([tabindex]) {
     z-index: -1
 }
 
-.display-block {
-    display: block;
-}
 
-.lowercase {
-    text-transform: lowercase;
-}
+
 
 /*-------------------------------------------------------------------
 
